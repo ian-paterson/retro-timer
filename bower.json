@@ -1,0 +1,23 @@
+{
+  "name": "retro-timer",
+  "description": "retro kitchen timer using javascript and css animations",
+  "main": "index.js",
+  "authors": [
+    "Ian Paterson <ianhpaterson@gmail.com>"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/ian-paterson/retro-timer",
+  "moduleType": [
+    "node"
+  ],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "~2.1.4"
+  }
+}
