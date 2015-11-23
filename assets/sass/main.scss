@@ -1,3 +1,49 @@
-.test-class {
-    font-size: 11px;
+@import 'timer';
+
+html, body, .container-table {
+    height: 100%;
 }
+
+.outer {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}  
+
+.circle {
+    width: 100%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 50%;
+    border-radius: 180px;
+}
+
+span {
+    font: bold 16px Helvetica, Sans-Serif bold;
+    height: 105px;
+    position: absolute;
+    left: 102px;
+    top: 7px;
+    transform-origin: bottom center;
+}
+
+.char1 { transform: rotate(0deg); color: #c31724; }
+.char2 { transform: rotate(30deg); }
+.char3 { transform: rotate(60deg); }
+.char4 { transform: rotate(90deg); }
+.char5 { transform: rotate(120deg); }
+.char6 { transform: rotate(150deg); }
+.char7 { transform: rotate(180deg); }
+.char8 { transform: rotate(210deg); }
+.char9 { transform: rotate(240deg); }
+.char10 { transform: rotate(270deg); }
+.char11 { transform: rotate(300deg); }
+.char12 { transform: rotate(330deg); }
+
+.pic {
+    opacity: 0.0;
+    position: fixed;
+    z-index: 9999999;
+}
+

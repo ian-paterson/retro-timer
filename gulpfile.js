@@ -13,7 +13,7 @@ var paths = {
     sass: './assets/sass/main.scss'
 }
 
-gulp.task('sass', function () {
+gulp.task('sass', function() {
   return gulp.src(paths.sass)
     .pipe(sourcemaps.init())
         .pipe(sass().on('error', sass.logError))
