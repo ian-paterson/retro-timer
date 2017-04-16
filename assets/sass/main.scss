@@ -1,41 +1,156 @@
 @import 'timer';
 
 html, body, .container-table {
-    height: 100%;
+  height: 100%;
 }
 
 .outer {
-    position: relative;
-    width: 100%;
-    height: 100%;
+  position: relative;
+  width: 100%;
+  height: 100%;
 }  
 
 .circle {
-    width: 100%;
-    position: absolute;
-    transform: translate(-50%, -50%);
-    left: 50%;
-    top: 50%;
-    border-radius: 180px;
+  width: 100%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  left: 50%;
+  top: 50%;
+  border-radius: 180px;
 }
 
 span {
-    font: bold 16px Helvetica, Sans-Serif bold;
-    height: 105px;
-    position: absolute;
-    left: 102px;
-    top: 7px;
-    transform-origin: bottom center;
+  font: bold 16px Helvetica, Sans-Serif bold;
+  height: 105px;
+  position: absolute;
+  left: 102px;
+  top: 7px;
+  transform-origin: bottom center;
+}
+
+.red-arm {
+  position: absolute;
+  background-color: #c31724;
+  width: 6px;
+  height: 52px;
+  top: -45px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 2px;
+}
+
+.red-dial {
+  background-color: #c31724;
+  max-width: 42px;
+  height: 42px;
+}
+
+.gold-arrow-up {
+  width: 0;
+  height: 0;
+  position: absolute;
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+  border-bottom: 4px solid #d89a4c;
+  top: -12px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.gold {
+  position: absolute;
+  background-color: #d89a4c;
+  width: 19px;
+  height: 22px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 4px;
+}
+
+.gold-arrow-down {
+  width: 0;
+  height: 0;
+  position: absolute;
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+  border-top: 4px solid #d89a4c;
+  top: 12px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.timer-body {
+  background-color: #c31724;
+  max-width: 331px;
+  height: 330px;
+}
+
+.bezel {
+  background-color: #b1afb4;
+  max-width: 261px;
+  height: 260px;
+  border: solid 1px #000;
+}
+
+.face-bg {
+  background-color: #fff;
+  max-width: 240px;
+  height: 240px;
+  border: solid 3px #c31724;
+}
+
+.dashed-face-border {
+  max-width: 232px;
+  height: 232px;
+  border: dashed 3px #c31724;
+}
+
+.solid-face-border {
+  max-width: 224px;
+  height: 224px;
+  border: solid 3px #c31724;
+}
+
+.number-border {
+  max-width: 173px;
+  height: 173px;
+  border: solid 2px #000;
+}
+
+.marker-setting {
+  margin-left: -2px;
+  top: -87px;
+  left: 85px;
+  height: 87px;
+}
+
+.big-marker {
+  width: 4px;
+  height: 12px;
+  background-color: #000;
+}
+
+.marker {
+  width: 2px;
+  height: 6px;
+  background-color: #000;
+}
+
+.small-tick {
+  height: 84px;
+  top: -84px;
+  left: 86px;
 }
 
 .char1 { 
-    transform: rotate(0deg);
-    color: #c31724; 
-    left: 106px;
+  transform: rotate(0deg);
+  color: #c31724; 
+  left: 106px;
 }
 .char2 { 
-    transform: rotate(30deg);
-    left: 106px;
+  transform: rotate(30deg);
+  left: 106px;
 }
 .char3 { transform: rotate(60deg); }
 .char4 { transform: rotate(90deg); }
@@ -49,9 +164,9 @@ span {
 .char12 { transform: rotate(330deg); }
 
 .pic {
-    opacity: 0.0;
-    position: fixed;
-    z-index: 9999999;
+  opacity: 0.0;
+  position: fixed;
+  z-index: 9999999;
 }
 
 .marker-1 { transform: rotate(0deg); }
