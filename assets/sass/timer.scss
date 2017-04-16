@@ -1,0 +1,62 @@
+.timer-body {
+    background-color: #c31724;
+    max-width: 331px;
+    height: 330px;
+}
+
+.bezel {
+    background-color: #b1afb4;
+    max-width: 261px;
+    height: 260px;
+    border: solid 1px #000;
+}
+
+.face-bg {
+	background-color: #fff;
+    max-width: 240px;
+    height: 240px;
+    border: solid 3px #c31724;
+}
+
+.dashed-face-border {
+    max-width: 232px;
+    height: 232px;
+    border: dashed 3px #c31724;
+}
+
+.solid-face-border {
+    max-width: 224px;
+    height: 224px;
+    border: solid 3px #c31724;
+}
+
+.number-border {
+    max-width: 173px;
+    height: 173px;
+    border: solid 2px #000;
+}
+
+.marker-setting {
+    margin-left: -2px;
+    top: -87px;
+    left: 85px;
+    height: 87px;
+}
+
+.big-marker {
+    width: 4px;
+    height: 12px;
+    background-color: #000;
+}
+
+.marker {
+    width: 2px;
+    height: 6px;
+    background-color: #000;
+}
+
+.small-tick {
+    height: 84px;
+    top: -84px;
+    left: 86px;
+}
