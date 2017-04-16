@@ -2,7 +2,6 @@ var gulp = require('gulp');
 var sass = require('gulp-sass');
 var concat = require('gulp-concat');
 var uglify = require('gulp-uglify');
-var watch = require('gulp-watch');
 var sourcemaps = require('gulp-sourcemaps');
 
 var paths = {
@@ -29,4 +28,9 @@ gulp.task('scripts', function() {
     .pipe(gulp.dest('./public/js'));
 });
 
-gulp.task('default', ['sass', 'scripts']);
+gulp.task('watch', function() {
+    gulp.watch(paths.scripts, ['scripts']);
+    gulp.watch(paths.sass, ['sass']);
+});
+
+gulp.task('default', ['sass', 'scripts', 'watch']);
